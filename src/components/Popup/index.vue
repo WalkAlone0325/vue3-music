@@ -26,13 +26,13 @@
         </mt-popup>
 
         <!-- 播放模式 -->
-<!--        <mt-popup class="playModeSheet" v-model="playModeVisible" position="bottom">-->
-<!--            <div class="playModeList">-->
-<!--                <mt-cell class="playMode-item" :class="{'active': playMode === item.value}" v-for="(item, index) in playModeOptions" :key="index" :title="item.label" @click.native="playModeChange(item.value)">-->
-<!--                    <div class="item-icon" :class="item.icon"></div>-->
-<!--                </mt-cell>-->
-<!--            </div>-->
-<!--        </mt-popup>-->
+        <mt-popup class="playModeSheet" v-model="playModeVisible" position="bottom">
+            <div class="playModeList">
+                <mt-cell class="playMode-item" :class="{'active': playMode === item.value}" v-for="(item, index) in playModeOptions" :key="index" :title="item.label" @click.native="playModeChange(item.value)">
+                    <div class="item-icon" :class="item.icon"></div>
+                </mt-cell>
+            </div>
+        </mt-popup>
     </div>
 </template>
 <script>
